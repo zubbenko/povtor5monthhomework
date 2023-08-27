@@ -12,11 +12,9 @@ class Movie(models.Model):
     description = models.TextField(blank=True, null=True)
     duration = models.BooleanField(default=True)
 
-
-
     def __str__(self):
         return self.title
 
-
 class Review(models.Model):
     text = models.TextField(max_length=200)
+    stars = models.IntegerField(choices=[(i, i) for i in range(1,6)])

@@ -1,4 +1,8 @@
 # created by virtualenv automatically
 .idea
 db.sqlite3
+templates
+pyvenv.cfg
+manage.py
+.gitignore
 
